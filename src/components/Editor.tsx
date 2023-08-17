@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import ExampleTheme from "../themes";
 import { LexicalComposer } from "@lexical/react/LexicalComposer";
 import { RichTextPlugin } from "@lexical/react/LexicalRichTextPlugin";
@@ -29,7 +30,7 @@ const editorConfig = {
   // The editor theme
   theme: ExampleTheme,
   // Handling of errors during update
-  onError(error) {
+  onError(error: any) {
     throw error;
   },
   // Any custom nodes go here
