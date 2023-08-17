@@ -26,7 +26,7 @@ function Placeholder() {
   return <div className="editor-placeholder">Enter some rich text...</div>;
 }
 
-const editorConfig = {
+const editorConfig: any = {
   // The editor theme
   theme: ExampleTheme,
   // Handling of errors during update
